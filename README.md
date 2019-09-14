@@ -34,7 +34,8 @@ npm run test
 Yes, there is docker build here, so you don't run mongo locally if extend server. You should have "[docker-compose](https://docs.docker.com/compose/install/)" being installed. To run locally on http://localhost:3002 docker (which will launch ui as well) do:
 There is simple node one file (a bit more) server, but not really required for development. To run it - you should run. Server will run as "nodemon" on port [3002](http://localhost:3002/) with up and running node on [:3002/api/memory](http://localhost:3002/api/memory), static part of app on [:3002/](http://localhost:3002), and with up and running MongoDB.
 ```
-docker-compose up
+
+
 ```
 
 ### Notes
@@ -76,3 +77,6 @@ VOD with save to watch later
  A / B testing - I would run (if it is possible) for percentage of auditory app without feature, and with feature and then collect stats and compare if people spend more time in app, return more frequently to app, very simple charts will indicate the success.
  
  Even if A / B testing is not possible, I would check stats if people are opening "watch later" section, for this I would use UI analytics (I predict, that analytics like GA or Kissmetrix or craze egg is installed). If people open - feature was necessary = is successful (feature itself and its implementation)
+ 
+ ### Demo
+ Hosted demo available in [github](https://sonnenhaft.github.io) and in [netlify](video-carousel-vlad) 

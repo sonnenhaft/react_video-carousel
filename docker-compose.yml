@@ -1,0 +1,16 @@
+version: "2"
+services:
+  web:
+    build: .
+    volumes:
+      # faster way to connect local folder for dev, in real should be 100% standalone
+      # because we can not rely on npm i
+      - ./:/usr/src/app
+    ports:
+    - "3002:3002"
+    depends_on:
+    - mongo
+  mongo:
+    image: mongo
+    ports:
+    - "27017:27017"

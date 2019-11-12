@@ -13,7 +13,7 @@ All sources are in folder `/src`, to edit them in "developers" mode on port [808
 npm run serve
 ```
 
-### Build (chuck and minify to "/docs" folder)
+### Build (chuck and minify to "/build" folder)
 ```
 npm run build
 ```

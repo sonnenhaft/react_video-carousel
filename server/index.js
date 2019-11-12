@@ -3,7 +3,7 @@
 const express = require('express')
 
 const app = express()
-app.use('/', express.static(require('path').join(__dirname, '../docs')))
+app.use('/', express.static(require('path').join(__dirname, '../build')))
 
 app.use(require('cors')())
 app.use(require('body-parser').json())

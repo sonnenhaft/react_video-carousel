@@ -5,7 +5,7 @@ import { readFromHash, prepareForHash } from './hash.utils';
 // so you see sample that "I know how to write tests"
 test('"readFromHash" should parse time and selected id', () => {
   expect(readFromHash('#vid_102_t=27:3'))
-    .toEqual({ selectedTitle: 'vid_102', time: 1623 });
+    .toEqual({ selectedTitle: 'vid 102', time: 1623 });
 });
 
 test('"readFromHash" should work if input has no # in it, is empty', () => {
@@ -13,7 +13,7 @@ test('"readFromHash" should work if input has no # in it, is empty', () => {
     .toEqual({ selectedTitle: '', time: 0 });
 
   expect(readFromHash('vid_102_t=27:3'))
-    .toEqual({ selectedTitle: 'vid_102', time: 1623 });
+    .toEqual({ selectedTitle: 'vid 102', time: 1623 });
 });
 
 test('"prepareForHash" should create string that we can store in url', () => {
